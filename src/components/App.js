@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
-        <p>Enter your name: </p>
+        <h1>Enter your name: </h1>
         <input type="text" onInput={(event)=>setVal(event.target.value)}/>
         {val ? <p>Hello {val}!</p>:""}
     </div>
