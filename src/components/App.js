@@ -8,9 +8,9 @@ const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
-        <p>Enter your name: </p>
+        {val ? <p>Hello {val}!</p>:<p>Enter your name:</p>}
         <input type="text" onInput={(event)=>setVal(event.target.value)}/>
-        {val ? <p>Hello {val}!</p>:""}
+        
     </div>
   )
 }
